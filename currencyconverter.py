@@ -2,7 +2,7 @@ from tkinter import *
 
 class CurrencyConverter:
     def __init__(self, root):
-        window = Tk()
+        window = root
        # GUI Setup
         window.title("Currency Converter")
         window.configure(bg="magenta")
