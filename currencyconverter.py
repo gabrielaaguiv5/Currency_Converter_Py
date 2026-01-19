@@ -18,7 +18,7 @@ class CurrencyConverter:
         # Entry Configuration
         Entry(frame, textvariable = self.amount_to_convert, justify = RIGHT, width=15).grid(row=0, column=1)
         self.conversion_rate = StringVar()
-        Entry(frame, textvariable = self.conversion_rate, justify = RIGHT, width=15).grid(row=0, column=1)
+        Entry(frame, textvariable = self.conversion_rate, justify = RIGHT, width=15).grid(row=1, column=1)
         self.converted_amount = StringVar()
         # For Converted Amount no user input is needed
         lblConverted_amount = Label(frame, font = ("Albert Sans", 12, "bold"), bg = "magenta", textvariable = self.converted_amount).grid(row=2, column=1, sticky=E)
