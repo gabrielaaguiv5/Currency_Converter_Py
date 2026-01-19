@@ -32,7 +32,7 @@ class CurrencyConverter:
     def converted_amount_function(self):
         try:
             rate = float(self.conversion_rate.get())
-            convertedAmount = amount = float(self.amount_to_convert.get()) * rate
+            convertedAmount = float(self.amount_to_convert.get()) * rate
             self.converted_amount.set(format(convertedAmount, '10.2f'))
         except ValueError:
             self.converted_amount.set("Invalid input")  
