@@ -24,7 +24,7 @@ class CurrencyConverter:
         Label(frame, textvariable = self.converted_amount, font = ("Albert Sans", 12, "bold"), bg = "magenta").grid(row=2, column=1, sticky=E)
         # Button Configuration
         # Button to perform conversion
-        btConvertedAmount = Button(frame, text = "Convert", font = ("Albert Sans", 12, "bold"), bg = "White", fg= "Black", command = self.converted_amount).grid(row=3, column=0, pady=15, sticky=E) #self.converted_amount is a function that will be created later
+        btConvertedAmount = Button(frame, text = "Convert", font = ("Albert Sans", 12, "bold"), bg = "White", fg= "Black", command = self.converted_amount_function).grid(row=3, column=0, pady=15, sticky=E) #self.converted_amount is a function that will be created later
         # Button to clear all fields
         btClear = Button(frame, text = "Clear", font = ("Albert Sans", 12, "bold"), bg = "White", fg = "Black", command = self.delete_all).grid(row=3, column=1, padx=25, pady=15,sticky=E)
 
