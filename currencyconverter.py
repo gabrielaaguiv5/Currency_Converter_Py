@@ -22,10 +22,10 @@ class CurrencyConverter:
         lblConverted_amount = Label(window, font = ("Albert Sans", 12, "bold"), bg = "magenta", textvariable = self.converted_amount).grid(row=3, column=2, sticky=E)
         # Button Configuration
         # Button to perform conversion
-        btConvertedAmount = Button(window, font = ("Albert Sans", 12, "bold"), bg = "White", fg= "Black", command = self.converted_amount).grid(row=4, column=2, sticky=E) #self.converted_amount is a function that will be created later
+        btConvertedAmount = Button(window, text = "Convert", font = ("Albert Sans", 12, "bold"), bg = "White", fg= "Black", command = self.converted_amount).grid(row=4, column=2, sticky=E) #self.converted_amount is a function that will be created later
         # Button to clear all fields
-        btClear = Button(window, font = ("Albert Sans", 12, "bold"), bg = "White", fg = "Black", command = self.delete_all).grid(row=4, column=6, padx=25, pady=25,sticky=E)
-    
+        btClear = Button(window, text = "Clear", font = ("Albert Sans", 12, "bold"), bg = "White", fg = "Black", command = self.delete_all).grid(row=4, column=3, padx=25, pady=25,sticky=E)
+
         window.mainloop() # Start the GUI event loop
 
     # Creating the function that will perform the conversion
